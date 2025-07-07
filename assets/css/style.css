@@ -1,0 +1,184 @@
+/* Reset et base */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', monospace;
+}
+
+body {
+    background-color: #f0f0f0;
+    color: #000;
+    line-height: 1.2;
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.col-4, .col-8 {
+    padding: 0 15px;
+}
+
+.col-4 {
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+}
+
+.col-8 {
+    flex: 0 0 66.666%;
+    max-width: 66.666%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Style du formulaire de recherche */
+nav {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 2px solid #000;
+    box-shadow: 5px 5px 0 #666;
+    position: relative;
+}
+
+nav::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: -5px;
+    bottom: -5px;
+    background-color: #ddd;
+    z-index: -1;
+}
+
+nav h1 {
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #000;
+    padding-bottom: 5px;
+}
+
+nav input[type="text"],
+nav input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #000;
+    background-color: #fff;
+    font-family: 'Courier New', monospace;
+}
+
+nav input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-family: 'Courier New', monospace;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    transition: all 0.3s;
+}
+
+nav input[type="submit"]:hover {
+    background-color: #333;
+    box-shadow: 3px 3px 0 #666;
+}
+
+/* Style du tableau */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border: 2px solid #000;
+    box-shadow: 5px 5px 0 #666;
+    position: relative;
+}
+
+.table::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: -5px;
+    bottom: -5px;
+    background-color: #ddd;
+    z-index: -1;
+}
+
+.table th {
+    background-color: #000;
+    color: #fff;
+    padding: 12px;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 1px solid #333;
+}
+
+.table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table tr:hover {
+    background-color: #f0f0f0;
+}
+
+.table a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.table a:hover {
+    text-decoration: underline;
+}
+
+a{
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .col-4, .col-8 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    
+    nav input[type="number"] {
+        width: 48%;
+        display: inline-block;
+    }
+    
+    nav input[type="number"]:first-child {
+        margin-right: 4%;
+    }
+
+
+}
+
+
+

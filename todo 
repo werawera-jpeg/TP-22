@@ -1,0 +1,98 @@
+SQL
+
+    tables a creer (dossier employees.sql) [OK]
+        -employees
+        -dept_manager
+        -departments
+        -dept_emp
+        -titles
+        -salaries
+
+    faire rentrer les donnees 
+        -load departments
+        -load dept emp
+        -load dept manager
+        -load employees
+        -load salaries1
+        -load salaries2
+        -load salaries3
+        -load titles 
+
+HTML/ PHP
+factorisation (jo)
+    -assets
+    -inc
+    -pages
+        -modele
+
+version 1
+    html
+
+(index)
+    php
+        -fonction afficher liste des departements (anjara) [OK]
+        - table => colonne affiche le nom du manager en cours (anjara) [OK]
+        - faire des liens => autre page envoyer les infos du departement (jo) [OK]
+
+(employes)
+    html
+
+    php
+        -fonction afficher liste des employes selon departement selectionne (jo) [OK]
+
+version 2
+    html
+
+(fiche employe)
+    php
+        - lien employe => afficher la fiche (infos sur l'employe) (anjara) [OK]
+        - historique salaire selon employe (anjara) [ok]
+        - historique emploi selon titre (anjara) [ok]
+
+(formulaire recherche) (jo)
+    html
+        - input 
+            - departement
+            - nom employé
+            - age min et age max
+        - lien vers un traitement: traitement_recherche.php
+            -page index_enter pour afficher le resultat des recherches
+
+        - reinitialiser les recherches 
+
+
+version 3
+index.php (anjara) [OK]
+    html
+        -rajouter une colonne sur liste dept 
+    php
+        - count le nb d'employes par dept
+
+stat.php (anjara) [OK]
+    html
+        tableau pour afficher les details de chaque emploi 
+    php
+        - ajuster avec des vues
+        - afficher tous les emplois
+        - effectif homme
+        - effectif femme
+        - salaire moyen
+
+fiche.php
+    php
+        -duree de travail le plus longtemps 
+
+version 4
+fiche.php
+    html
+        bouton changer de departement -> nouvelle page
+        -> formulaire
+    php
+        - update avec le nom du departement
+        - date de debut a inserer aussi
+
+
+
+
+
+
